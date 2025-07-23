@@ -2,6 +2,7 @@
 
 #set -x
 
+# MAKE SYMBOLIC LINKS
 ln -s "$PWD/.vimrc" "$HOME"
 ln -s "$PWD/.zshrc" "$HOME"
 ln -s "$PWD/.fonts" "$HOME"
@@ -20,3 +21,7 @@ for dir in */; do
 done
 
 cd ..
+
+
+# Update batcat binary cache (this is needed for loading custom themes)
+bat cache --build

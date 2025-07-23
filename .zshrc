@@ -10,7 +10,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # After changing themes: reload the terminal with omz reload
 # Installed custom themes: starship spaceship windows
-ZSH_THEME="spaceship"
+ZSH_THEME=""
+
+# setup for starship theme
+eval "$(starship init zsh)"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -100,6 +103,9 @@ fi
 # Set MANROFFOPT for man page formatting
 export MANROFFOPT="-c"
 
+# Set MINICOM coloring options for serial debugging
+export MINICOM="--color=on"
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -113,7 +119,3 @@ alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="vim ~/.oh-my-zsh"
 alias vim=nvim
 alias fzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
-
-
-# setup for starship theme
-eval "$(starship init zsh)"
