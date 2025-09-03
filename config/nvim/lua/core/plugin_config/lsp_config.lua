@@ -5,11 +5,11 @@ require("mason-lspconfig").setup( {
         "ast_grep",
         "bashls",
         "arduino_language_server",
-        "asm_lsp",
+        -- "asm_lsp",
         "clangd",
         "cmake",
         -- "ltex",
-        "textlsp",
+        -- "textlsp",
         "matlab_ls",
     }
 })
