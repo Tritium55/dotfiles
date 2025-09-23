@@ -6,6 +6,8 @@ My i3 .config files
 - polybar
 - zsh
 - neovim
+- batcat
+- fzf
 
 ### ZSH Dependencies
 - Powerlevel10k (theme)

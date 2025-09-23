@@ -13,3 +13,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smarttab = true
+
+-- always show sign column to prevent the code from shifting around when switching between NORMAL and e.g. INSERT MODE
+-- this is due to the LSP showing W, E, etc as error indicators for some lines.
+vim.o.signcolumn = "yes"

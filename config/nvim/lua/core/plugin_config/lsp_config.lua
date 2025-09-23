@@ -2,15 +2,17 @@ require("mason").setup()
 require("mason-lspconfig").setup( {
     -- ensure that all included language servers are installed
     ensure_installed = {
+        "clangd",
         "ast_grep",
         "bashls",
+        "lua_ls",
+        "pyright",
         "arduino_language_server",
-        -- "asm_lsp",
-        "clangd",
         "cmake",
+        -- "asm_lsp",
         -- "ltex",
         -- "textlsp",
-        "matlab_ls",
+        -- "matlab_ls",
     }
 })
 
@@ -35,4 +37,6 @@ require("lspconfig").clangd.setup {}
 require("lspconfig").cmake.setup {}     -- CMake
 --require("lspconfig").ltex.setup {}      -- LaTeX and Markdown
 require("lspconfig").matlab_ls.setup {}
+require("lspconfig").lua_ls.setup {}
+require("lspconfig").pyright.setup {}
 

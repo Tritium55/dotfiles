@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'vim-test/vim-test'
+  use 'junegunn/fzf'
   use {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
@@ -40,4 +41,7 @@ return require('packer').startup(function(use)
   if packer_bootstrap then
     require('packer').sync()
   end
+
+  -- LSP setup (enabling config the Neovim 0.11+ way)
+  -- vim.lsp.enable("lsp_config")
 end)
