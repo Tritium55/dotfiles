@@ -20,7 +20,8 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'vim-test/vim-test'
-  use 'junegunn/fzf'
+  use { "junegunn/fzf", run = ":call fzf#install()" }
+  use { "junegunn/fzf.vim" }
   use {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
