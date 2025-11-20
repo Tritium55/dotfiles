@@ -37,10 +37,12 @@ Make sure said file is executable.
     # Physical Escape key: Act as Caps Lock
     esc = capslock
     ~~~
-4. Reload the `keyd` configuration:
+4. Enable and start `keyd` with `systemctl`.
+5. Reload the `keyd` configuration:
     ~~~bash
     sudo keyd reload
     ~~~
+    You can monitor the changes from another terminal with `keyd monitor`.
 
 ## Dependencies
 - i3
