@@ -25,20 +25,20 @@ Make sure said file is executable.
 2. Navigate to and edit `/etc/keyd/default.conf`.
 3. Add the following lines:
 ~~~bash
-[ids]
-*
-
-[main]
-# Physical Caps Lock key: Tap for Escape, Hold for Control
-# Overload function syntax: overload(modifier, tap_action)
-capslock = overload(LEFTCTRL, ESC)
-
-# Physical Escape key: Act as Caps Lock
-esc = capslock
+    [ids]
+    *
+    
+    [main]
+    # Physical Caps Lock key: Tap for Escape, Hold for Control
+    # Overload function syntax: overload(modifier, tap_action)
+    capslock = overload(LEFTCTRL, ESC)
+    
+    # Physical Escape key: Act as Caps Lock
+    esc = capslock
 ~~~
 4. Reload the `keyd` configuration:
 ~~~bash
-sudo keyd reload
+    sudo keyd reload
 ~~~
 
 ## Dependencies
