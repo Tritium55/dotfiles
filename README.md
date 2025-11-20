@@ -24,7 +24,7 @@ Make sure said file is executable.
 1. Install `keyd`.
 2. Navigate to and edit `/etc/keyd/default.conf`.
 3. Add the following lines:
-~~~bash
+    ~~~bash
     [ids]
     *
     
@@ -35,11 +35,11 @@ Make sure said file is executable.
     
     # Physical Escape key: Act as Caps Lock
     esc = capslock
-~~~
+    ~~~
 4. Reload the `keyd` configuration:
-~~~bash
+    ~~~bash
     sudo keyd reload
-~~~
+    ~~~
 
 ## Dependencies
 - i3
