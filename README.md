@@ -26,12 +26,13 @@ Make sure said file is executable.
 3. Add the following lines:
     ~~~bash
     [ids]
+    
     *
     
     [main]
     # Physical Caps Lock key: Tap for Escape, Hold for Control
     # Overload function syntax: overload(modifier, tap_action)
-    capslock = overload(LEFTCTRL, ESC)
+    capslock = overload(control, esc)
     
     # Physical Escape key: Act as Caps Lock
     esc = capslock
