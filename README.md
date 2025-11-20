@@ -1,5 +1,5 @@
 # dotfiles
-My i3 .config files
+My pitiful attempt at organizing .config files.
 
 ## Keyboard layout settings
 ### X11
